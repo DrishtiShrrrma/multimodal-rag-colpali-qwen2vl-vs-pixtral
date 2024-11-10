@@ -193,10 +193,10 @@ with gr.Blocks(theme=gr.themes.Monochrome()) as demo:
     # Displaying Examples
     with gr.Row():
         gr.Markdown("## 💡 Example Queries")
-        gr.Examples(examples=get_example(), inputs=[file, query], label="Try These Examples", show_label=True)
+        gr.Examples(examples=get_example(), inputs=[file, query], label="Try These Examples")
 
     # Output Gallery for Search Results
-    output_gallery = gr.Gallery(label="📂 Retrieved Documents", height=600, show_label=True)
+    output_gallery = gr.Gallery(label="📂 Retrieved Documents", height=600)
 
     # Section 3: Answer Retrieval
     with gr.Row():
